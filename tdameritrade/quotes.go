@@ -64,8 +64,9 @@ type Quote struct {
 	MarkPercentChangeInDouble          float64 `json:"markPercentChangeInDouble"`
 	RegularMarketPercentChangeInDouble float64 `json:"regularMarketPercentChangeInDouble"`
 	Delayed                            bool    `json:"delayed"`
+	ChangeInDouble                     float64 `json:"changeInDouble"`
+	FuturePercentChange                float64 `json:"futurePercentChange"`
 }
-
 
 func (s *QuotesService) GetQuotes(ctx context.Context, symbols string) (*Quotes, *Response, error) {
 	u := fmt.Sprintf("marketdata/quotes")
@@ -89,4 +90,3 @@ func (s *QuotesService) GetQuotes(ctx context.Context, symbols string) (*Quotes,
 
 	return quotes, resp, nil
 }
-
