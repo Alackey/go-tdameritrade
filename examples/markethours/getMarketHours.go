@@ -3,11 +3,12 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/zricethezav/go-tdameritrade/tdameritrade"
-	"golang.org/x/oauth2"
 	"log"
 	"os"
 	"time"
+
+	"github.com/alackey/go-tdameritrade"
+	"golang.org/x/oauth2"
 )
 
 func main() {
@@ -53,4 +54,3 @@ func main() {
 	}
 	fmt.Printf("%+v\n", (*hours)["option"]["EQO"])
 }
-

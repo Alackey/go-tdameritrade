@@ -3,10 +3,11 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/zricethezav/go-tdameritrade/tdameritrade"
-	"golang.org/x/oauth2"
 	"log"
 	"os"
+
+	"github.com/alackey/go-tdameritrade"
+	"golang.org/x/oauth2"
 )
 
 func main() {
@@ -46,4 +47,3 @@ func main() {
 	}
 	fmt.Println(ph)
 }
-
